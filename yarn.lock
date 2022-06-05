@@ -195,6 +195,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/carbon@npm:^1.1.5":
+  version: 1.1.5
+  resolution: "@iconify-json/carbon@npm:1.1.5"
+  dependencies:
+    "@iconify/types": ^1.1.0
+  checksum: a40e58286cc299df4fe073e26ea509e4bacdbe0bfefa6bfae8821e0164611b3ff76aa6d4c3e90a0b39cd284ce40210c28d1f572709d6b86361c2bcc5e9f54a65
+  languageName: node
+  linkType: hard
+
 "@iconify/types@npm:^1.1.0":
   version: 1.1.0
   resolution: "@iconify/types@npm:1.1.0"
@@ -789,6 +798,49 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/core@npm:^8.6.0":
+  version: 8.6.0
+  resolution: "@vueuse/core@npm:8.6.0"
+  dependencies:
+    "@vueuse/metadata": 8.6.0
+    "@vueuse/shared": 8.6.0
+    vue-demi: "*"
+  peerDependencies:
+    "@vue/composition-api": ^1.1.0
+    vue: ^2.6.0 || ^3.2.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    vue:
+      optional: true
+  checksum: 5577699514e9d0c240f3322c8676814539340acc3c1f23dc44e80f96bc6b1d3241ec7da18fbcfccd3f4215374613714664c09f8293071bb2aaceac929a75c8c5
+  languageName: node
+  linkType: hard
+
+"@vueuse/metadata@npm:8.6.0":
+  version: 8.6.0
+  resolution: "@vueuse/metadata@npm:8.6.0"
+  checksum: 434ae03d965a7fb9fa711b245d63e3b581a67902ec7ab6095f8ba395b3c6320da5f1b78e233686a73ba0349e49c2d183254b46cb3736a94b58c77b7992e27d0d
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:8.6.0":
+  version: 8.6.0
+  resolution: "@vueuse/shared@npm:8.6.0"
+  dependencies:
+    vue-demi: "*"
+  peerDependencies:
+    "@vue/composition-api": ^1.1.0
+    vue: ^2.6.0 || ^3.2.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    vue:
+      optional: true
+  checksum: 4c5eb1d034f79176e79386b13cbaf8481f3126d7fbce5ff4f79ac7aa3de84e67976662fe3dc21c002c5b5084edee8ccec304493fd80c9f28c58520a9aec32499
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -1121,9 +1173,11 @@ __metadata:
   resolution: "chengxiaoxing.me@workspace:."
   dependencies:
     "@antfu/eslint-config": ^0.25.1
+    "@iconify-json/carbon": ^1.1.5
     "@typescript-eslint/eslint-plugin": ^5.27.0
     "@typescript-eslint/parser": ^5.27.0
     "@vitejs/plugin-vue": ^2.3.3
+    "@vueuse/core": ^8.6.0
     eslint: ^8.17.0
     eslint-plugin-antfu: ^0.25.1
     eslint-plugin-eslint-comments: ^3.2.0
@@ -4594,6 +4648,22 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 9292b8ba510a393d0c61c407ebfb4eaa818b2d8d106b3476cdc94cb57a0c59348a535936d698db04b35910a1cfdb16aeaf872f0f995b54cf6d7ed31bc7886deb
+  languageName: node
+  linkType: hard
+
+"vue-demi@npm:*":
+  version: 0.13.1
+  resolution: "vue-demi@npm:0.13.1"
+  peerDependencies:
+    "@vue/composition-api": ^1.0.0-rc.1
+    vue: ^3.0.0-0 || ^2.6.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+  bin:
+    vue-demi-fix: bin/vue-demi-fix.js
+    vue-demi-switch: bin/vue-demi-switch.js
+  checksum: d26b0602587f4dbd81f975f8f2de39910239805f0f2d72cafed0c7349c512f5363daf57e2761ba6a7ac66331a4cfa3dc857d6f7f62c57adbae85752d270118c8
   languageName: node
   linkType: hard
 
