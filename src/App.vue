@@ -22,5 +22,8 @@ useHead({
 </script>
 
 <template>
-  <RouterView />
+  <main class="px-7 py-10">
+    <NavBar />
+    <RouterView />
+  </main>
 </template>
