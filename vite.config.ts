@@ -6,6 +6,6 @@ import Unocss from 'unocss/vite'
 export default defineConfig({
   plugins: [
     Unocss(),
-    vue()
-  ]
+    vue(),
+  ],
 })
