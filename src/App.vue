@@ -1,20 +1,10 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import { useHead } from '@vueuse/head'
-import HelloWorld from './components/HelloWorld.vue'
-
-useHead({
-  title: 'Cheng,Xiaoxing',
-  meta: [
-    { name: 'description', content: 'Personal website' },
-  ],
-})
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <RouterView />
 </template>
 
 <style>
@@ -27,3 +17,8 @@ useHead({
   margin-top: 60px;
 }
 </style>
+
+<route lang="yaml">
+meta:
+  layout: default
+</route>
