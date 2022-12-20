@@ -1,0 +1,17 @@
+{
+    "title": "Cheng, Xiaoxing CV",
+    "education": [
+        {
+            "id": "sjtu",
+            "school": "上海交通大学",
+            "start_date": "2009/09/01",
+            "end_date": "2013/06/01"
+        }
+    ],
+    "publication": [
+        {
+            "journal": "apl",
+            "year": "2022"
+        }
+    ]
+}
