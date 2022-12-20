@@ -2,6 +2,8 @@
 layout: article
 ---
 
-# About page
+# About
 
-You can go back to the [home page](/).
+This page is using the `layouts/custom.vue` layout.
+
+[Back home](/)

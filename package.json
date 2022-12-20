@@ -1,14 +1,15 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "build": "nuxi generate",
+    "dev": "nuxi dev",
+    "preview": "nuxi preview"
   },
   "devDependencies": {
     "@nuxt/content": "latest",
-    "@nuxt/ui": "latest",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "@iconify-json/carbon": "^1.1.10",
+    "@iconify-json/twemoji": "^1.1.5",
+    "@unocss/nuxt": "latest"
   }
 }
