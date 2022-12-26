@@ -4,14 +4,74 @@
         {
             "id": "sjtu",
             "school": "上海交通大学",
-            "start_date": "2009/09/01",
-            "end_date": "2013/06/01"
+            "department": "材料科学与工程",
+            "score_type": "核心成绩",
+            "score": "90.13/100",
+            "start_date": "2009/09",
+            "end_date": "2013/06",
+            "ranking": "6/140",
+            "degree": "学士"
+        },
+        {
+            "id": "psu",
+            "school": "The Pennsylvania State University",
+            "department": "Materials Science and Engineering",
+            "score_type": "GPA",
+            "score": "3.73/4.00",
+            "start_date": "2013/09",
+            "end_date": "2020/05",
+            "degree": "PhD",
+            "advisor": "Long-Qing Chen"
         }
     ],
-    "publication": [
+    "jobs": [
         {
-            "journal": "apl",
-            "year": "2022"
+            "id": "mupro",
+            "name": "Mu-PRO LLC",
+            "role": "软件开发人员，唯一员工",
+            "description": "Mu-PRO LLC是由我的博士导师陈龙庆教授在2020年创办的专门开发相场模拟软件的公司。作为Mu-PRO的唯一员工，我负责公司所有事务，从建设公司网站到对老程序进行商业转化，从编写图形界面程序到软件自动化测试发布，从履行订单到后期技术支持。在没有投资的情况下，仅靠销售额支持我全职工作三年，完成所有计划软件的初步开发。",
+            "start_date": "2020/05",
+            "end_date": "至今",
+            "achievements": [
+                "发布MuPRO Ferroelectric服务器版",
+                "发布MuPRO Magnetic服务器版",
+                "发布MuPRO Effective Properties服务器版",
+                "发布MuPRO Effective Properties桌面版",
+                "发布MuPRO Dielectric Breakdown桌面版",
+                "发布MuPRO Impedance桌面版"
+            ]
+        }
+    ],
+    "coding": [
+        {
+            "id": "react",
+            "name": "React",
+            "description": "MuPRO桌面版软件和网页都是用React搭建的的用户界面。"
+        },
+        {
+            "id": "electron",
+            "name": "Electron",
+            "description": "MuPRO桌面版软件就是基于Electron框架的。"
+        },
+        {
+            "id": "vue",
+            "name": "Vue",
+            "description": "本个人网站就是使用vue+nuxt3搭建的。"
+        },
+        {
+            "id": "c",
+            "name": "C",
+            "description": "MuPRO模拟软件的核心语言之一，例如MuPRO Effective Properties桌面版全部是由C编写。"
+        },
+        {
+            "id": "fortran",
+            "name": "Fortran",
+            "description": "MuPRO模拟软件的核心语言之一，例如所有服务器软件几乎都是由Fortran编写。"
+        }
+    ],
+    "products": [
+        {
+            "id": "mupro-viz"
         }
     ]
 }
