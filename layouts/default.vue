@@ -1,9 +1,9 @@
 <template>
-    <main w-full h-full py-5>
-        <Header />
-        <div class="w-full pt-5 px-10 text-left">
-        </div>
-        <slot />
+    <wrapper flex min-h-full flex-col justify-between>
+        <main>
+            <Header />
+            <slot />
+        </main>
         <Footer />
-    </main>
+    </wrapper>
 </template>

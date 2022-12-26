@@ -1,12 +1,8 @@
 <template>
     <main>
-        <section class="hero-section">
-            <header>
-                <h1 class="font-extrabold text-4xl text-center">Cheng, Xiaoxing</h1>
-            </header>
-        </section>
         <section>
             <article class="prose mx-auto">
+                <h2>程晓行</h2>
                 <ContentDoc />
             </article>
         </section>
