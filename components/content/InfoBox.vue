@@ -1,19 +1,34 @@
 <!-- ./components/content/InfoBox.vue -->
 
-<script setup>
+<script setup lang="ts">
 // import icons from HeroIcons
 
 // define props in <script>
-const props = defineProps(["type"]);
+const props = defineProps({ type: { type: String, required: true } })
 </script>
 
 <template>
   <!-- Access `type` prop in Dynamic class  -->
-  <div class="info-box not-prose" :class="[type]">
+  <div
+    class="info-box not-prose"
+    :class="[type]"
+  >
     <!-- Conditionally render icons based on prop -->
-    <div i-carbon-warning v-if="type == 'warning'" class="icon solid" />
-    <div i-carbon-error v-else-if="type == 'error'" class="icon solid" />
-    <div i-carbon-information v-else class="icon solid" />
+    <div
+      v-if="type == 'warning'"
+      i-carbon-warning
+      class="icon solid"
+    />
+    <div
+      v-else-if="type == 'error'"
+      i-carbon-error
+      class="icon solid"
+    />
+    <div
+      v-else
+      i-carbon-information
+      class="icon solid"
+    />
 
     <details>
       <summary>
@@ -22,7 +37,10 @@ const props = defineProps(["type"]);
       </summary>
       <div class="details pt-2">
         <!-- Named markdown component to render rich-text -->
-        <Markdown :use="$slots.details" unwrap="p"></Markdown>
+        <Markdown
+          :use="$slots.details"
+          unwrap="p"
+        />
       </div>
     </details>
   </div>

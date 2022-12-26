@@ -24,19 +24,3 @@ jobs:
 
       - name: Lint
         run: yarn lint
-
-  typecheck:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-          cache: yarn
-
-      - name: Install
-        run: yarn install
-
-      - name: Typecheck
-        run: yarn typecheck
-

@@ -3,13 +3,23 @@
   "scripts": {
     "build": "nuxi generate",
     "dev": "nuxi dev",
-    "preview": "nuxi preview"
+    "preview": "nuxi preview",
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxt/content": "latest",
-    "nuxt": "latest",
     "@iconify-json/carbon": "^1.1.10",
     "@iconify-json/twemoji": "^1.1.5",
-    "@unocss/nuxt": "latest"
+    "@nuxt/content": "latest",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@unocss/nuxt": "latest",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^24.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "nuxt": "latest",
+    "typescript": "*"
   }
 }

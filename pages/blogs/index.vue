@@ -1,28 +1,31 @@
 <!-- ./pages/blog/index.vue -->
 
-<script setup>
+<script setup lang="ts">
 definePageMeta({
-  key: (route) => route.fullPath,
-});
+  key: (route) => route.fullPath
+})
 
 // get tag query
 const {
-  query: { tags },
-} = useRoute();
+  query: { tags }
+} = useRoute()
 
-const filter = ref(tags?.split(","));
+const filter = ref(tags?.split(','))
 
 // set meta for page
 useHead({
-  title: "All blogs",
-  meta: [{ name: "description", content: "Here's a list of all my great articles" }],
-});
+  title: 'All blogs',
+  meta: [{ name: 'description', content: "Here's a list of all my great articles" }]
+})
 </script>
+
 <template>
   <main>
     <header class="page-heading">
       <div class="wrapper">
-        <h1 class="text-4xl font-extrabold text-center">All blogs</h1>
+        <h1 class="text-4xl font-extrabold text-center">
+          All blogs
+        </h1>
       </div>
     </header>
     <section class="page-section">
@@ -43,19 +46,31 @@ useHead({
         }"
       >
         <!-- Default list slot -->
-        <template v-slot="{ list }">
+        <template #default="{ list }">
           <ul class="article-list">
-            <li v-for="article in list" :key="article._path" class="article-item">
+            <li
+              v-for="article in list"
+              :key="article._path"
+              class="article-item"
+            >
               <NuxtLink :to="article._path">
                 <div class="wrapper">
                   <!-- <div class="img-cont w-32 shrink-0">
                     <img :src="`/${article.img}`" :alt="article.title" class="rounded-lg max-h-[8rem]" />
                   </div> -->
                   <header>
-                    <h1 class="text-2xl font-semibold">{{ article.title }}</h1>
+                    <h1 class="text-2xl font-semibold">
+                      {{ article.title }}
+                    </h1>
                     <p>{{ article.description }}</p>
                     <ul class="article-tags">
-                      <li class="tag !py-0.5" v-for="(tag, n) in article.tags" :key="n">{{ tag }}</li>
+                      <li
+                        v-for="(tag, n) in article.tags"
+                        :key="n"
+                        class="tag !py-0.5"
+                      >
+                        {{ tag }}
+                      </li>
                     </ul>
                   </header>
                 </div>
