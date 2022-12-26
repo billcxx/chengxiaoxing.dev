@@ -1,11 +1,8 @@
 name: Github pages
 on:
   push:
-      paths:
-          - 'docs/**'
-          - 'README.md'
-      branches:
-          - 'master'
+    branches:
+      - main
 env:
   CI: false
 jobs:
@@ -19,7 +16,7 @@ jobs:
       - name: Build doc
         run: |
             pnpm install
-            pnpm run build
+            pnpm run generate
       - name: Doxygen html for github page
         uses: peaceiris/actions-gh-pages@v3
         with:

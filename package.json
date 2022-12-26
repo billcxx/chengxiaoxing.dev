@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxi generate",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
     "dev": "nuxi dev",
     "preview": "nuxi preview",
     "lint": "eslint ."
