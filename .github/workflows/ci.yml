@@ -11,16 +11,10 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux]
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16.x
-          cache: yarn
-
       - name: Install
-        run: yarn install
-
+        run: pnpm install
       - name: Lint
-        run: yarn lint
+        run: pnpm run lint
