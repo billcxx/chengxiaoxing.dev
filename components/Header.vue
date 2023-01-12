@@ -15,23 +15,21 @@
           CV
         </NuxtLink>
       </li>
-      <!-- <li>
-                <NuxtLink class="text-xl text-gray-400 hover:text-gray-500" to="/blogs">Blogs</NuxtLink>
-            </li> -->
-      <li>
-        <NuxtLink
-          class="text-xl text-gray-400 hover:text-gray-500"
-          to="/projects"
-        >
-          Projects
-        </NuxtLink>
-      </li>
+
       <li>
         <NuxtLink
           class="text-xl text-gray-400 hover:text-gray-500"
           to="/publications"
         >
           Publications
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink
+          class="text-xl text-gray-400 hover:text-gray-500"
+          to="/projects"
+        >
+          Projects
         </NuxtLink>
       </li>
     </ul>

@@ -49,15 +49,71 @@ const query: QueryBuilderParams = { path, find: 'one' }
             </ul>
           </li>
         </ul>
-        <h2>技能树</h2>
-        <h4>编程类</h4>
+        <h2>项目</h2>
+        <h4>开源类</h4>
         <table>
           <tr
-            v-for="skill in doc.coding"
+            v-for="software in doc.opensource"
+            :key="software.id"
+          >
+            <td
+              align-top
+              w-40
+              align="right"
+            >
+              {{ software.name }}
+            </td>
+            <td align-top>
+              {{ software.description }}
+            </td>
+          </tr>
+        </table>
+        <h4>商业类</h4>
+        <table>
+          <tr
+            v-for="software in doc.commercial"
+            :key="software.id"
+          >
+            <td
+              align-top
+              w-40
+              align="right"
+            >
+              {{ software.name }}
+            </td>
+            <td align-top>
+              {{ software.description }}
+            </td>
+          </tr>
+        </table>
+        <h2>技能树</h2>
+        <h4>语言类</h4>
+        <table>
+          <tr
+            v-for="skill in doc.language"
             :key="skill.id"
           >
             <td
               align-top
+              w-40
+              align="right"
+            >
+              {{ skill.name }}
+            </td>
+            <td align-top>
+              {{ skill.description }}
+            </td>
+          </tr>
+        </table>
+        <h4>软件类</h4>
+        <table>
+          <tr
+            v-for="skill in doc.software"
+            :key="skill.id"
+          >
+            <td
+              align-top
+              w-40
               align="right"
             >
               {{ skill.name }}

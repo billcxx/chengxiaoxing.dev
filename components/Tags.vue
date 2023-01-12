@@ -30,7 +30,7 @@ const toggleExpand = () => {
 }
 
 // get only tags data from `/blog`
-const { data } = await useAsyncData('tags', () => queryContent('blogs').only(['tags']).find())
+const { data } = await useAsyncData('tags', () => queryContent('projects').only(['tags']).find())
 
 // generate array without duplicates from flattened array
 const articleTags = [...new Set(flatten(data.value, 'tags'))]
