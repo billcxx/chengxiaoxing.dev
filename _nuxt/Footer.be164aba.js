@@ -1,0 +1,1 @@
+import{i as e,o as t,b as n}from"./entry.14544fde.js";const c={},o={class:"text-sm text-gray4 text-center p-10"};function r(s,_){return t(),n("div",o," All right reserved by Cheng, Xiaoxing ")}const i=e(c,[["render",r]]);export{i as default};
